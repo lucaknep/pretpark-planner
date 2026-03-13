@@ -88,7 +88,11 @@ dagprogramma = {
         "leeftijd": bezoeker["leeftijd"],
         "lengte": bezoeker["lengte"]
     },
-    "voorzieningen": voorzieningen_output
+    "weergegevens": {
+        "temperatuur": 15
+    },
+    "voorzieningen": voorzieningen_output,
+    "totale_duur": 0
 }
 
 # ------------------------------------------------
@@ -101,4 +105,5 @@ with open("dagprogramma_bezoeker_x.json", "w") as f:
 print("JSON bestand gemaakt")
 
 db.close()
+
 
